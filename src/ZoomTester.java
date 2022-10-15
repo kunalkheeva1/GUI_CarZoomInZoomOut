@@ -7,6 +7,10 @@ import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 
+
+/**
+ * Car will implement Icon
+ */
 class Car implements Icon{
 
     private int carWidth;
@@ -28,6 +32,15 @@ class Car implements Icon{
     public int getIconHeight() {
         return carWidth/2;
     }
+
+    /**
+     * Accepting compoment, Graphics and x and y co-ordinates
+     * @param c  a {@code Component} to get properties useful for painting
+     * @param g  the graphics context
+     * @param x  the X coordinate of the icon's top-left corner
+     * @param y  the Y coordinate of the icon's top-left corner
+     *
+     */
     public void paintIcon(Component c, Graphics g, int x, int y){
         Graphics2D graphics2D = (Graphics2D) g;
         Rectangle2D.Double body = new Rectangle2D.Double(x, y+ carWidth/6, carWidth-1, carWidth/6);
@@ -53,6 +66,7 @@ class Car implements Icon{
     }
 }
 
+// main class that executes the program
 public class ZoomTester {
 
     private static Car car;
@@ -72,6 +86,7 @@ public class ZoomTester {
         };
 
     }
+    // main method for button creation and frame development and execution
     public static void main(String[] args){
         JFrame frame = new JFrame();
         JButton zoomIn = new JButton("ZoomIn");
