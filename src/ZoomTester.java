@@ -56,7 +56,11 @@ class Car implements Icon{
         Line2D.Double roof = new Line2D.Double(r2, r3);
         Line2D.Double rearGlass = new Line2D.Double(r3,r4);
 
+
+        //changing the colors of the tires
+        graphics2D.setColor(Color.GREEN);
         graphics2D.fill(frontTire);
+        graphics2D.setColor(Color.BLUE);
         graphics2D.fill(rearTire);
         graphics2D.setColor(Color.RED);
         graphics2D.fill(body);
