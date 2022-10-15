@@ -99,11 +99,13 @@ public class ZoomTester {
         JButton zoomOut = new JButton("ZoomOut");
         zoomOut.addActionListener(createZoomButtonListener(0.9));
 
-        car = new Car(100);
+        car = new Car(500);
         label = new JLabel(car);
 
         frame.setLayout(new FlowLayout());
 
+        // adding buttons and label in the frame, and making it packed and visible
+        // also auto close operation
         frame.add(zoomIn);
         frame.add(zoomOut);
         frame.add(label);
