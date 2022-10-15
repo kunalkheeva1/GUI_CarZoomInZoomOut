@@ -40,7 +40,6 @@ class Car implements Icon{
         Point2D.Double r4 = new Point2D.Double(x+carWidth*5/6, y+carWidth/6);
 
         Line2D.Double frontGlass = new Line2D.Double(r1,r2);
-
         Line2D.Double roof = new Line2D.Double(r2, r3);
         Line2D.Double rearGlass = new Line2D.Double(r3,r4);
 
